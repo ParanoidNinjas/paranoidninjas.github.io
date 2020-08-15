@@ -13,7 +13,10 @@
 
     <header>
       <div class="container">
-        <h1>{{ page.title | default: "ParanoidNinjas" }}</h1>
+				<div class="row">
+          <h1>{{ page.title | default: "ParanoidNinjas" }}</h1>
+				  <div class="blink">_</div>
+				</div>
         <h2>{{ site.description | default: "Hacking all the booze, drinking all the things" }}</h2>
         <ul>
           <li class="text-center d-block d-sm-inline-block px-1 px-md-3"><a href="{{ "/foo" | relative_url }}" class="text-white">foo</a></li>
