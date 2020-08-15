@@ -14,9 +14,9 @@
     <header>
       <div class="container">
         <a id="a-title" href="{{ '/' | relative_url }}">
-          <h1>{{ site.title | ParanoidNinjas }}</h1>
+          <h1>{{ site.title | default: "ParanoidNinjas" }}</h1>
         </a>
-				<h2>{{ site.description | ParanoidNinjas }}</h2>
+				<h2>{{ site.description | default: "ParanoidNinjas" }}</h2>
 
         <section id="downloads">
           {% if site.show_downloads %}
